@@ -6,8 +6,7 @@ def get_config(variant="attn", ckpt_path=None):
         "mlp_adapter_spec": "v0-2.t0",
         "pool_type": "attn" if variant == "attn" else "avg",
         "resolution": [160, 256],
-        "dropout": 0.0,
         "video_length": 60,
-        "device": "cuda",
-        "ckpt_path": ckpt_path,  # okay to keep outside init
+        "device": "cuda",  # will be overridden
+        "ckpt_path": ckpt_path
     }
