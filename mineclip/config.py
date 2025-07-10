@@ -15,7 +15,7 @@ def get_config(variant="attn", ckpt_path=None, checksum=None):
         "hidden_dim": 512,
         "image_feature_dim": 512,
         "mlp_adapter_spec": "v0-2.t0",
-        "pool_type": "attn.mean" if variant == "attn" else "avg",
+        "pool_type": "attn.n0" if variant == "attn" else "avg",
         "resolution": [160, 256],
 
         # ✅ Add this block to support model.load_ckpt()
