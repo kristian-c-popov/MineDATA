@@ -6,7 +6,7 @@ import torch
 import torch.nn as nn
 import torch.nn.functional
 
-import mineclip.utils as U
+import utils as U
 
 
 __all__ = ["VideoRewardBase"]
