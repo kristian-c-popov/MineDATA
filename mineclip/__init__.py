@@ -1,2 +1,2 @@
-from .mineclip import MineCLIP
-from .config import SIMMC_MODEL_CONFIG
+from mineclip.mineclip import MineCLIP
+from mineclip.config import get_config
